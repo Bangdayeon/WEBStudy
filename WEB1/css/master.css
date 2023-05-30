@@ -1,0 +1,40 @@
+body{
+    margin:0;
+}
+h1{
+    font-size:45px;
+    text-align: center;
+    border-bottom:5px solid skyblue;
+    padding:20px;
+    margin:0px;
+    display:block; /*inline : 같은 줄, block : 줄바꿈*/
+}
+#grid{
+    display:grid;
+    grid-template-columns:150px 1fr;
+}
+#grid ol{ /*부모가 grid인 ol에 대한 설정*/
+    border-right:5px solid skyblue;
+    margin:0px;
+    padding-top:20px;
+    padding-right:30px;
+}
+#article{
+    padding-left:30px;
+}
+
+@media(max-width:650px){
+    h1{
+        font-size:30px;
+    }
+    #grid{
+        display:block;
+    }
+    #grid ol{
+        border:none;
+        border-bottom:5px solid skyblue;
+        padding-bottom:20px;
+    }
+}
+/*1fr : 비율(fr)*/
+/*caniuse 사이트에서 속성 등을 검색해서 사용이 가능한지 확인할 수 있다*/

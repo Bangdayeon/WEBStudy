@@ -4,6 +4,15 @@
     <head>
         <title>Basics of HTML</title>
         <meta charset="utf-8">
+        <style>
+            li{
+                margin-top:15px;
+            }
+            h2{
+                margin-top:20px;
+                color:green;
+            }
+        </style>
     </head>
     <body>
         <p>
@@ -23,30 +32,30 @@
         <h1>태그들 모음</h1>
         
         
-        <h3>구조 관련 태그</h3>
+        <h2>구조 관련 태그</h2>
         <img src="IMGs/img_structure.jpg" width="30%">
         <ol>
-            <li style="margin-top:15px">
+            <li>
                 <strong>&lt;!doctype html&gt;</strong><br>
                 - 이 웹페이지가 HTML로 제작되었다는 것을 표현
             </li>
 
-            <li style="margin-top:15px">
+            <li>
                 <strong>&lt;html&gt;</strong><br>
                 - body 태그와 head 태그를 감싸는 하나의 태그
             </li>
         
-            <li style="margin-top:15px">
+            <li>
                 <strong>&lt;head&gt;</strong><br>
                 - 본문 설명 관련 코드를 넣는 태그<br>
                 - &lt;title&gt;, &lt;meta&gt;와 같은 코드를 넣는다
             </li>
         
-            <li style="margin-top:15px">
+            <li>
                 <strong>&lt;body&gt;</strong><br>
                 - 본문 내용 관련 코드를 넣는 태그
             </li>
-            <li style="margin-top:15px">
+            <li>
                 <strong>&lt;title&gt;</strong><br>
                 - 웹페이지의 제목 지정<br>
                 - 지정하지 않으면 파일명이 그대로 탭에 쓰인다<br>
@@ -54,7 +63,7 @@
                 <small>- 본문이 아닌 본문을 설명하는 역할</small>
             </li>
         
-            <li style="margin-top:15px">
+            <li>
                 <strong>&lt;meta&gt;</strong><br>
                 - 해당 문서에 대한 메타데이터를 정의할 때 사용한다<br>
                 ex) charset 속성을 사용하여 utf-8과 같은 문서 형식 정의<br>
@@ -62,32 +71,32 @@
             </li>
         </ol>
         
-        <h3 style="margin-top:30px">기타 태그</h3>
+        <h2>기타 태그</h2>
         <ol>
             <li>
                 <strong>&lt;strong&gt;</strong><br>
                 - 두꺼운 글씨
             </li>
         
-            <li style="margin-top:15px">
+            <li>
                 <strong>&lt;u&gt;</strong><br>
                 - underline<br>
                 - 밑줄
             </li>
         
-            <li style="margin-top:15px">
+            <li>
                 <strong>&lt;h1&gt;~&lt;h6&gt;</strong><br>
                 - 제목 태그<br>
                 - 숫자가 작을수록 글씨가 커진다
             </li>
         
-            <li style="margin-top:15px">
+            <li>
                 <strong>&lt;br&gt;</strong><br>
                 - 줄바꿈 태그<br>
                 - 쌍 없이 문장 끝에 하나만 사용한다
             </li>
         
-            <li style="margin-top:15px">
+            <li>
                 <strong>&lt;p&gt;</strong><br>
                 - 단락 태그<br>
                 - &lt;p&gt; 태그와 역할이 같지만 단락을 표현할 때 사용하면 더 좋다<br>
@@ -96,7 +105,7 @@
                 ex) &lt;p style="margin-top:45px"&gt;
             </li>
         
-            <li style="margin-top:15px">
+            <li>
                 <strong>&lt;img&gt;</strong><br>
                 - 이미지 태그<br>
                 - src(sorce) 속성을 같이 사용해야한다<br>
@@ -105,7 +114,7 @@
                 - <strong>width 속성</strong>을 사용하여 숫자나 %로 크기를 조정할 수 있다
             </li>
         
-            <li style="margin-top:15px">
+            <li>
                 <strong>&lt;li&gt;</strong><br>
                 - 리스트 태그
                 - <strong>&lt;ul&gt;</strong>(unordered list), <strong>&lt;ol&gt;</strong>(ordered list)와 함께 사용한다<br>
@@ -118,15 +127,38 @@
                 &lt;/ul&gt;<br>
             </li>
         
-            <li style="margin-top:15px">
-            <strong>&lt;a&gt;</strong><br>
-            - 링크 태그 (anchor)<br>
-            - ex) &lt;a href="링크 주소" target="_blank" title="~~"&gt;
-            ㄴ href(<strong>H</strong>yperText <strong>Ref</strong>erence)<br>
-            ㄴ target="_blank" : 링크 클릭 시, 새 창에서 페이지가 열리게 하는 속성<br>
-            ㄴ title="~~" : 커서 올렸을 때, 링크가 어떤 내용을 담고 있는지 툴팁으로 보여주는 기능<br>
-            <a href="https://www.op.gg/" target="_blank" title="롤 전적 검색 사이트">예시 링크(웹)</a><br>
-            <a href="WEB1/index.html" target="_blank" title="생활코딩 보고 만든 사이트">(생코)</a>
+            <li>
+                <strong>&lt;a&gt;</strong><br>
+                - 링크 태그 (anchor)<br>
+                - ex) &lt;a href="링크 주소" target="_blank" title="~~"&gt;
+                ㄴ href(<strong>H</strong>yperText <strong>Ref</strong>erence)<br>
+                ㄴ target="_blank" : 링크 클릭 시, 새 창에서 페이지가 열리게 하는 속성<br>
+                ㄴ title="~~" : 커서 올렸을 때, 링크가 어떤 내용을 담고 있는지 툴팁으로 보여주는 기능<br>
+                <a href="https://www.op.gg/" target="_blank" title="롤 전적 검색 사이트">예시 링크(웹)</a><br>
+                <a href="WEB1/index.html" title="생활코딩 보고 만든 사이트">(생코)</a>
+            </li>
+
+            <li>
+                <strong>&lt;style&gt;</strong><br>
+                - 내부 코드가 css 문법임을 나타내는 태그
+            </li>
+
+            <li>
+                <strong>&lt;div&gt;</strong><br>
+                - 의미는 없지만 디자인 용도로 태그가 필요할 때 사용한다<br>
+                - <strong>block 단위</strong> 태그이다
+            </li>
+
+            <li>
+                <strong>&lt;div&gt;</strong><br>
+                - 의미는 없지만 디자인 용도로 태그가 필요할 때 사용한다<br>
+                - <strong>inline 단위</strong> 태그이다
+            </li>
+
+            <li>
+                <strong>&lt;link&gt;</strong><br>
+                - 이 웹페이지가 어떤 <strong>CSS 파일</strong>과 연결되어 있는지 표현하는 태그<br>
+                - rel 속성과, href 속성을 사용한다<br>
             </li>
         </ol>
     </body>
