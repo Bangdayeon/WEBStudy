@@ -1,0 +1,38 @@
+body{
+    margin:0;
+}
+h1{
+    font-size:45px;
+    text-align: center;
+    border-bottom:5px solid skyblue;
+    padding:20px;
+    margin:0px;
+    display:block;
+}
+#grid{
+    display:grid;
+    grid-template-columns:150px 1fr;
+}
+#grid ol{
+    border-right:5px solid skyblue;
+    margin:0px;
+    padding-top:20px;
+    padding-right:30px;
+}
+#article{
+    padding-left:30px;
+}
+
+@media(max-width:650px){
+    h1{
+        font-size:30px;
+    }
+    #grid{
+        display:block;
+    }
+    #grid ol{
+        border:none;
+        border-bottom:5px solid skyblue;
+        padding-bottom:20px;
+    }
+}
