@@ -20,15 +20,40 @@
             <div id="article">
                 <h2>JavaScript</h2>
                 <p>
-                    JavaScript (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, dynamic, weakly typed, 
-                    prototype-based, multi-paradigm, and interpreted programming language. Alongside HTML and 
-                    CSS, JavaScript is one of the three core technologies of World Wide Web content production. 
-                    It is used to make webpages interactive and provide online programs, including video games. The 
-                    majority of websites employ it, and all modern web browsers support it without the need for 
-                    plug-ins by means of a built-in JavaScript engine. Each of the many JavaScript engines represent 
-                    a different implementation of JavaScript, all based on the ECMAScript specification, with some 
-                    engines not supporting the spec fully, and with many engines supporting additional features 
-                    beyond ECMA. 
+                    HTML 위에서 작동하는 언어<br>
+                </p>
+
+                <h3>JS를 HTML에서 사용하는 방법</h3>
+                <p>
+                    1. <strong>&lt;script&gt;</strong> 태그를 사용하여 HTML에 해당 코드가 JS라는 것을 알린다<br>
+                    ex) document.write('hello world');<br>
+                    ex) document.write(1+1);<br><br>
+                    2. 특정 속성을 사용하여 속성값으로 JS언어를 사용한다<br>
+                    ex) &lt;input type="button" value="hi" onclick="alert('hi')&gt;<br>
+                    : onclick 속성의 속성값으로는 JS가 오며, 해당 속성값은 웹브라우저가 기억하고 동작한다<br><br>
+                    3. 콘솔(consol) 이용하기<br>
+                    ex) 데이터를 계산해야하는 경우 등에 간단하게 사용해볼 수 있다<br>
+                    ex) alert('(문자열)')'(문자열)'.length<br>
+                    <img src="imgs/jsInConsol.jpg" width="40%">
+                </p>
+
+                <h3>이벤트</h3>
+                <p>
+                    onclick : 클릭 이벤트<br>
+                    onchange : 내용이 변하는 이벤트<br>
+                    onkeydown : 키가 눌리는 이벤트<br>
+                </p>
+
+                <h3>데이터 타입</h3>
+                <p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" target="_blank">Mojila</a><br>
+                    <strong>Number</strong><br>
+                    - 연산을 할 수 있다<br>
+                    <strong>String</strong><br>
+                    - "" 혹은 '' 안에 입력하여 표현한다<br>
+                    - 문자열 끝에 .length를 붙여 글자수를 알 수 있다<br>
+                    - .toUpperCase()로 소문자를 대문자로 바꿀 수 있다<br>
+                    - .indexOf('character')를 사용하여 해당 문자가 처음 나오는 인덱스를 알 수 있다<br>
                 </p>
             </div>
         </div>

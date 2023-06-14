@@ -9,9 +9,15 @@ h1{
     margin:0px;
     display:block; /*inline : 같은 줄, block : 줄바꿈*/
 }
+h3{
+    background-color:paleturquoise;
+    border-top:30px;
+    margin-right:30px;
+}
 #grid{
     display:grid;
     grid-template-columns:150px 1fr;
+    border-bottom:5px solid skyblue;
 }
 #grid ol{ /*부모가 grid인 ol에 대한 설정*/
     border-right:5px solid skyblue;
