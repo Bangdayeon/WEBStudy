@@ -4,11 +4,13 @@
         <meta charset="utf-8">
         <title>WEB1 - JavaScript</title>
         <link rel="stylesheet" href="css/master.css">
+        <script src="js/colors.js"></script>
     </head>
     <body>
-        <h1>
-            <a href="index.html">WEB</a>
-        </h1>
+        <h1><a href="index.html">WEB</a></h1>
+        <input type="button" value="night" onclick="
+            nightDayHandler(this);
+        ">
 
         <div id="grid">
             <ol>
@@ -105,6 +107,48 @@
                             }
                         </script>
                     </ul>
+                </p>
+
+                <h3>함수</h3>
+                <p>
+                    <strong>function</strong>을 사용하여 함수를 만든다<br>
+                    function 함수명() {함수의 내용}<br><br>
+                    함수를 실행할 때는 아래와 같이 사용한다<br>
+                    함수명();<br><br>
+                </p>
+
+                <h3>객체</h3>
+                <p>
+                    - 서로 <strong>연관된 함수와 변수</strong>를 그룹핑하여 정리정돈의 수단으로 사용할 수 있다<br>
+                    - 객체에 포함된 함수는 <strong>method(메소드)</strong>이다
+                    - 오퍼레이트(.)를 사용하여 객체 내 데이터를 가져오거나 추가할 수 있다<br>
+                    <strong>var</strong> 객체명 = {<br>
+                        "약칭1":값1<br>
+                        "약칭2":값2<br>
+                    };<br>
+                    ...<br>
+                    document.write(객체명.약칭1); <- 데이터 불러옴<br>
+                    객체명.약칭3 = "값3" <- 새로운 데이터 추가<br>
+                    객체명[약칭4(공백포함 가능)] = "값4" <- 새로운 데이터 추가<br><br>
+
+                    - 객체 내 데이터에 순회하며 접근할 수 있다<br>
+                    for(var key in 객체명) {<br>
+                    document.write(객체명[key]+'&lt;br&gt;');<br>
+                    }<br><br>
+
+                    - Property & mEthod<br>
+                    객체명.함수명 = function(){ <br>
+                    for(var key in this){<br>
+                        document.write(this[key]+&lt;br&gt;);<br>
+                    }<br><br>
+
+                </p>
+                
+                <h3>Library & Framework</h3>
+                <p>
+                    라이브러리 - 가져와서 사용<br>
+                    ex) jQuery<br><br>
+                    프레임워크 - 프레임워크 안에서 수정하며 사용<br>
                 </p>
             </div>
         </div>
