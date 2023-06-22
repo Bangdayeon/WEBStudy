@@ -69,6 +69,43 @@
                     => document.getElementByyId("myId").style<br>
                 </p>
                 
+                <h3>조건문</h3>
+                <p>
+                    아래와 같은 형태로 작성한다<br>
+                    if(true){ }<br>
+                    else{ }<br>
+                </p>
+
+                <h3>배열</h3>
+                <p>
+                    아래와 같은 형태로 배열을 생성한다<br>
+                    var 배열명 = ["값1", "값2", "값3"];<br><br>
+
+                    아래와 같은 형태로 데이터를 활용한다<br>
+                    document.write(배열명[0]);<br><br>
+
+                    아래와 같이 배열값의 갯수를 알아낸다<br>
+
+                    document.write(배열명.<strong>length</strong>);<br><br>
+                    아래와 같이 배열에 값을 추가할 수 있다<br>
+                    배열명.push("값4");<br><br>
+
+                    다른 다양한 기능들도 활용할 수 있다<br>
+                    <script>
+                        var shoes = ['fila', 'nike', 'newbalance', 'adidas'];
+                    </script>
+                    <ul>
+                        <script>
+                            var i = 0;
+                            while(i<shoes.length){
+                                //document.write('<li><a href="http://a.com/'+shoes[i]+'">'+shoes[i]+'</a></li>'); 생코 예시
+                                //document.write('<li><a href="http://'+shoes[i]+'.com"></a></li>'); 시행 착오
+                                document.write('<li><a href="http://www.'+shoes[i]+'.com/">'+shoes[i]+'</a></li>');
+                                i += 1;
+                            }
+                        </script>
+                    </ul>
+                </p>
             </div>
         </div>
     </body>
