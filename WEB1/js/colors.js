@@ -15,7 +15,6 @@ var Links = {
         $('a').css('color', color);
         //$: 모든 a태그에 대하여 적용하겠다
 
-
         // var alist = document.querySelectorAll('a');
         // var i = 0;
         // while(i < alist.length){
