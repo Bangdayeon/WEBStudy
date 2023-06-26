@@ -85,13 +85,7 @@
                         * 내용에 CSS가 적힌다<br>
                     </li>
                 </ol>
-                <!--------------------Sectioning root-------------------->
-                <h3>Sectioning root</h3>
-                <strong>&lt;body&gt;</strong><br>
-                * 본문 내용 관련 태그들을 넣는 태그<br>
-                * 사용자에게 보여지는 내용을 작성한다<br>
-                
-                <h3>기본 구조 태그</h3>
+
                 <p>
                     위 태그들을 사용하여 아래와 같은 형태의 html 문서의 기본 구조를 만들 수 있다<br>
                     &lt;!DOCTYPE html&gt;<br>
@@ -105,47 +99,57 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;somethings<br>
                     &nbsp;&nbsp;&lt;/body&gt;<br>
                     &lt;/html&gt;<br>
-
                 </p>
-                
-                <h3>BOX TAGS</h3>
-                - 화면 구조를 나타내기 위한 태그들<br>
-                - 사용자에게 보여지지 않는다<br>
+                <!--------------------Sectioning root-------------------->
+                <h3>Sectioning root</h3>
+                <strong>&lt;body&gt;</strong><br>
+                * 본문 내용 관련 태그들을 넣는 태그<br>
+                * 사용자에게 보여지는 내용을 작성한다<br>
+                <!--------------------Sectioning root-------------------->
+                <h3>Content sectioning</h3>
+                * 컨텐츠의 논리적 개념과 관련된 태그들<br>
+                * 화면 구조를 구성하기 위한 태그들로, 사용자에게 직접 보여지지 않는다<br>
+                * a.k.a. Box Tags
                 <ol>
                     <li>
-                        <strong>&lt;header&gt;</strong><br>
+                        <strong>&lt;address&gt;</strong><br>
+                        * 정보를 통한 링크들을 묶는 태그<br>
+                        ex) 메일, 번호 등 <br>
+                        <address>
+                            <a href="mailto:dybang00@gmail.com">dybang00@gmail.com</a><br>
+                            <a href="tel:+8201012345678">(010)1234-5678</a><br>
+                        </address>
+                    </li>
+                    <li>
+                        <strong>&lt;article&gt;</strong><br>
+                    </li>
+                    <li>
+                        <strong>&lt;aside&gt;</strong><br>
                     </li>
                     <li>
                         <strong>&lt;footer&gt;</strong><br>
                     </li>
                     <li>
-                        <strong>&lt;nav&gt;</strong><br>
+                        <strong>&lt;header&gt;</strong><br>
                     </li>
                     <li>
-                        <strong>&lt;aside&gt;</strong><br>
-
+                        <strong>&lt;h1&gt;~&lt;h6&gt;</strong><br>
+                    </li>
+                    <li>
+                        <strong>&lt;hgroup&gt;</strong><br>
                     </li>
                     <li>
                         <strong>&lt;main&gt;</strong><br>
                     </li>
                     <li>
+                        <strong>&lt;nav&gt;</strong><br>
+                    </li>
+                    <li>
                         <strong>&lt;section&gt;</strong><br>
                     </li>
-                    <li>
-                        <strong>&lt;article&gt;</strong><br>
-                        - 재사용이 가능한 것들을 묶는 태그<br>
-                    </li>
-                    <li>
-                        <strong>&lt;div&gt;</strong><br>
-                        - block level
-                    </li>
-                    <li>
-                        <strong>&lt;span&gt;</strong><br>
-                    </li>
-                    <li>
-                        <strong>&lt;form&gt;</strong><br>
-                    </li>
                 </ol>
+
+
 
                 <h3>ITEM TAGS</h3>
                 - 사용자에게 보여지는 것들을 표현하기 위한 태그<br>
