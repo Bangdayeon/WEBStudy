@@ -45,45 +45,49 @@
 
                 <h3>Main root</h3>
                 <strong>&lt;html&gt;</strong><br>
-                : 이 문서가 html 문서임을 알림
+                * 이 문서가 html 문서임을 알림
 
                 <h3>Document metadata</h3>
-                : 페이지 정보를 포함
+                * 페이지 정보를 포함하는 태그들
+                <ol>
+                    <li>
+                        <strong>&lt;head&gt;</strong><br>
+                        * 본문 관련 설명을 입력<br>
+                        * &lt;title&gt;, &lt;meta&gt;와 같은 아래 다른 코드들을 넣는다<br>
+                    </li>
+                    <li>
+                        <strong>&lt;meta&gt;</strong><br>
+                        * 해당 문서의 메타데이터를 정의<br>
+                        ex) &lt;meta charset="utf-8"&gt;<br>
+                        ex) &lt;meta name="viewport" content="width=device-width"&gt;
+                    </li>
+                    <li>
+                        <strong>&lt;title&gt;</strong><br>
+                        * 웹페이지의 제목 지정<br>
+                        * 브라우저에서 웹페이지를 검색할 때 사용한다<br>
+                        * 지정하지 않으면 파일명을 그대로 사용<br>
+                    </li>
+                    <li>
+                        <strong>&lt;base&gt;</strong><br>
+                        * 해당 문서의 베이스가 되는 URL을 사용할 경우 이용하는 태그<br>
+                        * 문서에서 한 번만 사용할 수 있다<br>
+                    </li>
+                    <li>
+                        <strong>&lt;link&gt;</strong><br>
+                        * 해당 문서와 관련된 문서 및 외부 소스를 링크하는 태그<br>
+                        * css나 외부 리소스 아이콘을 사용하는 등의 경우에 사용<br>
+                        ex) &lt;link rel="stylesheet" href="css/master.css"&gt;<br>
+                        ex) &lt;link rel="icon" href="favicon.ico"&gt;<br>
+                    </li>
+                    <li>
+                        <strong>&lt;style&gt;</strong><br>
+                        * 문서에 적용되는 스타일 정보를 포함하는 태그<br>
+                        * 내용에 CSS가 적힌다<br>
+                    </li>
+                </ol>
 
                 <h3>기본 구조 태그</h3>
                 <ol>
-
-                    <li>
-                        <strong>&lt;html&gt;</strong><br>
-                        - body 태그와 head 태그를 감싸는 하나의 태그
-                    </li>
-                
-                    <li>
-                        <strong>&lt;head&gt;</strong><br>
-                        - 본문 설명 관련 코드를 넣는 태그<br>
-                        - &lt;title&gt;, &lt;meta&gt;와 같은 코드를 넣는다
-                    </li>
-
-                    <li>
-                        <strong>&lt;meta&gt;</strong><br>
-                        - 해당 문서에 대한 메타데이터를 정의할 때 사용한다<br>
-                        ex)<br>
-                        <strong>&lt;meta charset="utf-8"&gt;</strong><br>
-                        : 모든 언어를 지원할 수 있음<br>
-                        <strong>&lt;meta name="viewport" content="width=device-width"&gt;</strong><br>
-                        : 컨텐츠 크기를 디바이스 크기에 맞춤<br>
-                        <small>- 본문이 아닌 본문을 설명하는 역할</small>
-                    </li>
-
-                    <li>
-                        <strong>&lt;title&gt;</strong><br>
-                        - 웹페이지의 제목 지정<br>
-                        - 지정하지 않으면 파일명이 그대로 탭에 쓰인다<br>
-                        - 검색엔진이 웹페이지를 분석할 때 중요하게 쓰이는 태그<br>
-                        - 브라우저에서 웹페이지를 검색할 때 사용한다<br>
-                        <small>- 본문이 아닌 본문을 설명하는 역할</small>
-                    </li>
-                
                     <li>
                         <strong>&lt;body&gt;</strong><br>
                         - 본문 내용 관련 코드를 넣는 태그<br>
