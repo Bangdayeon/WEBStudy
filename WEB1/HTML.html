@@ -28,14 +28,19 @@
                 *HyperText = 태그를 의미한다
                 <p>
                     - 태그는 대부분 두쌍씩 사용한다<br>
-                    - 태그는 중첩하여 사용이 가능하다<br>
+                    - 태그는 중첩하여 사용이 가능하다 (부모태그&자식태그)<br>
                     - 앞에 있는 태그<strong>(&lt;&gt;)</strong>는 열리는 태그, 뒤에 있는 태그<strong>(&lt;/&gt;)</strong>는 닫히는 태그
                 </p>
 
                 <h3>관련 사이트 모음</h3>
                 <ol>
                     <li>
-                        <a href="https://www.w3schools.com/tags/ref_byfunc.asp" target="_blank">태그 모음 사이트</a>
+                        <a href="https://developer.mozilla.org/ko/" target="_blank">MDN</a><br>
+                        : 웹 관련 정보를 가장 빠르게 확인할 수 있다<br>
+                    </li>
+                    <li>
+                        <a href="https://validator.w3.org/#validate_by_input" target="_blank">validator</a><br>
+                        : 오류 검사할 수 있는 사이트<br>
                     </li>
                 </ol>
 
@@ -62,7 +67,11 @@
                     <li>
                         <strong>&lt;meta&gt;</strong><br>
                         - 해당 문서에 대한 메타데이터를 정의할 때 사용한다<br>
-                        ex) charset 속성을 사용하여 utf-8과 같은 문서 형식 정의<br>
+                        ex)<br>
+                        <strong>&lt;meta charset="utf-8"&gt;</strong><br>
+                        : 모든 언어를 지원할 수 있음<br>
+                        <strong>&lt;meta name="viewport" content="width=device-width"&gt;</strong><br>
+                        : 컨텐츠 크기를 디바이스 크기에 맞춤<br>
                         <small>- 본문이 아닌 본문을 설명하는 역할</small>
                     </li>
 
@@ -71,14 +80,31 @@
                         - 웹페이지의 제목 지정<br>
                         - 지정하지 않으면 파일명이 그대로 탭에 쓰인다<br>
                         - 검색엔진이 웹페이지를 분석할 때 중요하게 쓰이는 태그<br>
+                        - 브라우저에서 웹페이지를 검색할 때 사용한다<br>
                         <small>- 본문이 아닌 본문을 설명하는 역할</small>
                     </li>
                 
                     <li>
                         <strong>&lt;body&gt;</strong><br>
-                        - 본문 내용 관련 코드를 넣는 태그
+                        - 본문 내용 관련 코드를 넣는 태그<br>
+                        - 사용자에게 보여지는 내용을 작성한다<br>
                     </li>
                 </ol>
+                <p>
+                    위 태그들을 사용하여 아래와 같은 형태의 html 문서의 기본 구조를 만들 수 있다<br>
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &nbsp;&nbsp;&lt;head&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt; @@@ &lt;/title&gt;<br>
+                    &nbsp;&nbsp;&lt;/head&gt;<br>
+                    &nbsp;&nbsp;&lt;body&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;somethings<br>
+                    &nbsp;&nbsp;&lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+
+                </p>
                 
                 <h3>기타 태그</h3>
                 <ol>
