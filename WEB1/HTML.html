@@ -103,12 +103,149 @@
 
                 </p>
                 
-
-                <h3>기타 태그</h3>
+                <h3>BOX TAGS</h3>
+                - 화면 구조를 나타내기 위한 태그들<br>
+                - 사용자에게 보여지지 않는다<br>
                 <ol>
                     <li>
-                        <strong>&lt;strong&gt;</strong><br>
+                        <strong>&lt;header&gt;</strong><br>
+                    </li>
+                    <li>
+                        <strong>&lt;footer&gt;</strong><br>
+                    </li>
+                    <li>
+                        <strong>&lt;nav&gt;</strong><br>
+                    </li>
+                    <li>
+                        <strong>&lt;aside&gt;</strong><br>
+
+                    </li>
+                    <li>
+                        <strong>&lt;main&gt;</strong><br>
+                    </li>
+                    <li>
+                        <strong>&lt;section&gt;</strong><br>
+                    </li>
+                    <li>
+                        <strong>&lt;article&gt;</strong><br>
+                        - 재사용이 가능한 것들을 묶는 태그<br>
+                    </li>
+                    <li>
+                        <strong>&lt;div&gt;</strong><br>
+                        - block level
+                    </li>
+                    <li>
+                        <strong>&lt;span&gt;</strong><br>
+                    </li>
+                    <li>
+                        <strong>&lt;form&gt;</strong><br>
+                    </li>
+                </ol>
+
+                <h3>ITEM TAGS</h3>
+                - 사용자에게 보여지는 것들을 표현하기 위한 태그<br>
+                - block/inline level로 나누어진다<br>
+                &nbsp;&nbsp;* block : 한 줄에 하나<br>
+                &nbsp;&nbsp;* inline : 공간이 허용되면 다른 태그 옆에 배치<br>
+                - content : tag 내부에 들어간 내용<br>
+                - Element : Opening Tag - Content - Closing Tag까지<br>
+                - Attributes(속성) : opening tag에서 태그에 대한 자세한 속성값을 설정<br>
+
+                <ol>
+                    <li>
+                        <strong>&lt;a&gt;</strong><br>
+                        - 링크(anchor)<br>
+                        - ex) &lt;a href="링크 주소" target="_blank" title="~~"&gt;<br>
+                        ㄴ href(<strong>H</strong>yperText <strong>Ref</strong>erence)<br>
+                        ㄴ target="_blank" : 링크 클릭 시, 새 창에서 페이지가 열리게 하는 속성<br>
+                        ㄴ title="~~" : 커서 올렸을 때, 링크가 어떤 내용을 담고 있는지 툴팁으로 보여주는 기능<br>
+                        <a href="https://www.op.gg/" target="_blank" title="롤 전적 검색 사이트">&lt;op.gg&gt;</a><br>
+                        <a href="WEB1/1.html" title="생활코딩 보고 만든 사이트">(생코)</a>
+                    </li>
+                    <li>
+                        <strong>&lt;button&gt;</strong><br>
+                    </li>
+                    <li>
+                        <strong>&lt;input&gt;</strong><br>
+                        - 입력 형식을 구현하기 위한 태그<br>
+                        - 보통 <strong>lable</strong>태그와 함께 사용
+                        - <strong style="color:dodgerblue">type</strong> 속성을 사용하여 여러 입력 방식을 사용한다<br>
+                        <label for="input_text">text:</label>
+                        <input id="input_text" type="text"><br>
+
+                        <label for="input_password">password:</label>
+                        <input id="input_password" type="password"><br>
+
+                        <label for="input_radio">radio:</label>
+                        <input id="input_radio" type="radio"><br>
+
+                        <label for="input_checkbox">checkbox:</label>
+                        <input id="input_checkbox" type="checkbox"><br>
+
+                        <label for="input_file">file:</label>
+                        <input id="input_file" type="file"><br>
+
+                        <label for="input_image">image:</label>
+                        <input id="input_image" type="image"><br>
+
+                        <label for="input_hidden">hidden:</label>
+                        <input id="input_hidden" type="hidden"><br>
+
+                        <label for="input_submit">submit:</label>
+                        <input id="input_submit" type="submit"><br>
+
+                        <label for="input_button">button:</label>
+                        <input id="input_button" type="button"><br>
+
+                        <label for="input_color">color:</label>
+                        <input id="input_color" type="color"><br>
+                    </li>
+                    <li>
+                        <strong>&lt;label&gt;</strong><br>
+                    </li>
+                    <li>
+                        <strong>&lt;img&gt;</strong><br>
+                        - 이미지 태그<br>
+                        - src(sorce) 속성을 같이 사용해야한다<br>
+                        - 인터넷 이미지 주소나 로컬 이미지 주소를 넣는다<br>
+                        ex) &lt;img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png"&gt;<br>
+                        - <strong>width 속성</strong>을 사용하여 숫자나 %로 크기를 조정할 수 있다
+                    </li>
+                    <li>
+                        <strong>&lt;video&gt;</strong><br>
+                    </li>
+                    <li>
+                        <strong>&lt;audio&gt;</strong><br>
+                    </li>
+                    <li>
+                        <strong>&lt;map&gt;</strong><br>
+                    </li>
+                    <li>
+                        <strong>&lt;canvas&gt;</strong><br>
+                    </li>
+                    <li>
+                        <strong>&lt;table&gt;</strong><br>
+                    </li>
+                </ol>
+
+                <h3>문장 관련 태그</h3>
+                <ol>
+                    <li>
+                        <strong>&lt;p&gt;</strong><br>
+                        - 단락 태그<br>
+                        - &lt;p&gt; 태그와 역할이 같지만 단락을 표현할 때 사용하면 더 좋다<br>
+                        - 웹페이지를 정보로써 더 의미있게 전달하기 때문이다<br>
+                        - 단락과 단락 사이 간격이 고정되어 있어 시각적 자유도가 떨어지나, css를 사용하여 조정할 수 있다<br>
+                        ex) &lt;p style="margin-top:45px"&gt;
+                    </li>
+                    <li>
+                        <strong>&lt;strong / b&gt;</strong><br>
                         - 두꺼운 글씨
+                        - inline 태그
+                    </li>
+                    <li>
+                        <strong>&lt;span&gt;</strong><br>
+                        - inline 태그
                     </li>
                 
                     <li>
@@ -128,29 +265,10 @@
                         - 줄바꿈 태그<br>
                         - 쌍 없이 문장 끝에 하나만 사용한다
                     </li>
-                
-                    <li>
-                        <strong>&lt;p&gt;</strong><br>
-                        - 단락 태그<br>
-                        - &lt;p&gt; 태그와 역할이 같지만 단락을 표현할 때 사용하면 더 좋다<br>
-                        - 웹페이지를 정보로써 더 의미있게 전달하기 때문이다<br>
-                        - 단락과 단락 사이 간격이 고정되어 있어 시각적 자유도가 떨어지나, css를 사용하여 조정할 수 있다<br>
-                        ex) &lt;p style="margin-top:45px"&gt;
-                    </li>
-                
-                    <li>
-                        <strong>&lt;img&gt;</strong><br>
-                        - 이미지 태그<br>
-                        - src(sorce) 속성을 같이 사용해야한다<br>
-                        - 인터넷 이미지 주소나 로컬 이미지 주소를 넣는다<br>
-                        ex) &lt;img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png"&gt;<br>
-                        - <strong>width 속성</strong>을 사용하여 숫자나 %로 크기를 조정할 수 있다
-                    </li>
-                
                     <li>
                         <strong>&lt;li&gt;</strong><br>
                         - 리스트 태그
-                        - <strong>&lt;ul&gt;</strong>(unordered list), <strong>&lt;ol&gt;</strong>(ordered list)와 함께 사용한다<br>
+                        - <strong>&lt;ul&gt;</strong>(unordered list), <strong>&lt;ol&gt;</strong>(ordered list)를 부모로 사용한다<br>
                         ex)<br>
                         &lt;ul&gt;<br>
                         &nbsp;&nbsp;&lt;li&gt;<br>
@@ -158,17 +276,6 @@
                         &nbsp;&nbsp;&nbsp;&lt;something 2<br>
                         &nbsp;&nbsp;&lt;/li&gt;<br>
                         &lt;/ul&gt;<br>
-                    </li>
-                
-                    <li>
-                        <strong>&lt;a&gt;</strong><br>
-                        - 링크 태그 (anchor)<br>
-                        - ex) &lt;a href="링크 주소" target="_blank" title="~~"&gt;
-                        ㄴ href(<strong>H</strong>yperText <strong>Ref</strong>erence)<br>
-                        ㄴ target="_blank" : 링크 클릭 시, 새 창에서 페이지가 열리게 하는 속성<br>
-                        ㄴ title="~~" : 커서 올렸을 때, 링크가 어떤 내용을 담고 있는지 툴팁으로 보여주는 기능<br>
-                        <a href="https://www.op.gg/" target="_blank" title="롤 전적 검색 사이트">&lt;op.gg&gt;</a><br>
-                        <a href="WEB1/1.html" title="생활코딩 보고 만든 사이트">(생코)</a>
                     </li>
                 </ol>
 
@@ -200,21 +307,6 @@
                         <strong>&lt;script&gt;</strong><br>
                         - 내부 코드가 JS 문법임을 나타내는 태그<br>
                         - &lt;body&gt; 안에서 사용한다
-                    </li>
-                    <li>
-                        <strong>&lt;input&gt;</strong><br>
-                        - 입력 형식을 구현하기 위한 태그<br>
-                        - <strong style="color:dodgerblue">type</strong> 속성을 사용하여 여러 입력 방식을 사용한다<br>
-                        + type의 속성값으로는 아래 내용들이 올 수 있다<br>
-                        ** text : 텍스트를 입력하는 창 생성<br>
-                        ** password : 비밀번호를 입력하는 창 생성<br>
-                        ** radio : 라디오 버튼 생성<br>
-                        ** checkbox : 체크박스 생성<br>
-                        ** file : 파일 이름 입력 창 생성<br>
-                        ** image : 이미지를 전송 버튼으로 제작<br>
-                        ** hidden : 사용자에게 보이지 않지만 서버로 전송<br>
-                        ** submit : 서버로 제출/전송하는 버튼을 제작<br>
-                        ** button : 일반 버튼을 생성<br>
                     </li>
                 </ol>
             </div>
