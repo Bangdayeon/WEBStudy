@@ -495,16 +495,30 @@
                 <h3>Interactive elements</h3>
                 <ol>
                     <li>
-                        <b>&lt;details&gt;</b><br>
-                        * 
+                        <b>&lt;summary&gt;, &lt;details&gt;</b><br>
+                        * <b>summary</b>: 세부 정보에 대한 요약, 캡션 등을 지정하는 태그<br>
+                        * <b>details</b>: summary를 클릭하면 펼쳐지는 내용을 넣는 태그<br>
+                        * details 안에 제목 넣는 느낌으로 summary 태그를 넣는다<br>
+                        <details>
+                            <summary>월화수목 금토일</summary>
+                            기분좋게 들 썩이지~
+                            신나게 놀자 댄스 윋미~ (마마마마마마마마무)
+                        </details>
                     </li>
                     <li>
                         <b>&lt;dialog&gt;</b><br>
-                        * 
-                    </li>
-                    <li>
-                        <b>&lt;summary&gt;</b><br>
-                        * 
+                        * 대화형 창을 띄우는 태그<br>
+                        <dialog open>
+                            <p>
+                                (&lt;dilog&gt;)<br>
+                                우울해하지 마십시오!<br>
+                                우울과 우웅은 한끗 차이입니다!<br>
+                                우울해말고 귀여워지십시오<br>
+                            </p>
+                            <form method="dialog">
+                                <button>다같이 : 우웅~</button>
+                            </form>
+                        </dialog>
                     </li>
                 </ol>
                 <!--------------------Web Components-------------------->
