@@ -477,21 +477,68 @@
                 <h3>Table content</h3>
                 <ol>
                     <li>
+                        <b>&lt;caption&gt;</b><br>
+                        * 테이블의 캡션/제목 표시<br>
+                    </li>
+                    <li>
                         <b>&lt;colgroup&gt;, &lt;col&gt;</b><br>
-                        * 
+                        * <b>colgroup</b>: 테이블 내의 col들을 묶는 태그<br>
+                        * <b>col</b>: 테이블 내의 col 정의
                     </li>
                     <li>
-                        <b>&lt;tbody&gt;, &lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</b><br>
-                        * 
+                        <b>&lt;table&gt;</b><br>
+                        * 테이블을 정의하는 태그<br>
                     </li>
                     <li>
-                        <b>&lt;tfoot&gt;</b><br>
-                        * 
+                        <b>&lt;tbody&gt;</b><br>
+                        * 테이블 행 집합(tr태그)을 묶어 테이블 본문을 구성하는 태그<br>
                     </li>
                     <li>
                         <b>&lt;thead&gt;</b><br>
-                        * 
+                        * 테이블 전체의 헤드임을 나타내는 태그<br>
                     </li>
+                    <li>
+                        <b>&lt;tfoot&gt;</b><br>
+                        * 테이블 전체의 foot임을 나타내는 태그<br>
+                        * 열의 요약으로써 쓸 수 있다<br>
+                    </li>
+                    <li>
+                        <b>&lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</b><br>
+                        * 정의할 때의 의미를 구분하기 위함
+                        * <b>tr</b>: table row cells, th, td를 포함하는 태그<br>
+                        * <b>th</b>: table header cells<br>
+                        * <b>td</b>: 헤더가 아닌 celss<br>
+                        * scope 속성을 사용하여 col/row를 지정할 수 있다
+                    </li>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>과일</th>
+                                <th scope="col">가격</th>
+                                <th scope="col">색깔</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">사과</th>
+                                <td>2,000원</td>
+                                <td>빨강</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">바나나</th>
+                                <td>1,000원</td>
+                                <td>노랑</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th scope="row">평균</th>
+                                <td>1,500원</td>
+                                <td>주황</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    
                 </ol>
                 <!--------------------Forms-------------------->
                 <h3>Forms</h3>
