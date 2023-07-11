@@ -19,7 +19,7 @@ li{
 }
 #grid{
     display:grid;
-    grid-template-columns:150px 1fr;
+    grid-template-columns:200px 1fr;
     border-bottom:5px solid skyblue;
 }
 #grid ol{ /*부모가 grid인 ol에 대한 설정*/
@@ -29,7 +29,7 @@ li{
     padding-right:30px;
 }
 #article{
-    padding-left:30px;
+    padding-left:40px;
 }
 
 @media(max-width:650px){
