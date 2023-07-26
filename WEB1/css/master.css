@@ -17,6 +17,7 @@ h3{
 li{
     margin-top:20px;
 }
+
 #grid{
     display:grid;
     grid-template-columns:200px 1fr;

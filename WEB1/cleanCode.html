@@ -31,9 +31,29 @@
                 </p>
 
                 <h3>변수</h3>
-                
                 <p>
-                    
+                    <strong>var의 사용을 지양하기</strong><br>
+                    var : "함수" 스코프를 가짐<br>
+                    => 같은 main 함수 내에서의 정의라면 분기문 내의 변경도 분기문 바깥까지 영향을 끼칠 수 있다<br>
+                    let, const : "블록 단위" 스코프 및 TDZ(Temporal Dead Zone) 속성을 가짐 -> 더 안전하게 코드를 작성할 수 있다<br>
+                    => 분기문(블록) 내의 변경이 분기문 바깥에 영향을 끼치지 않는다<br><br>
+                    ex)<br>
+                    var name = '이름';<br>
+                    var name = '이름2';<br>
+                    => 재할당과 재선언이 가능함<br><br>
+
+                    let name = '이름'<br>
+                    let name = '이름2'(x)<br>
+                    name = '이름2' (o)<br>
+                    => 재선언이 불가능함<br><br>
+
+                    const name = '이름'<br>
+                    const name = '이름2' (x)<br>
+                    name = '이름2' (x)<br>
+                    => 재할당 및 재선언이 불가능함<br><br>
+                    이런 식으로 const를 최대한 사용하고 값도 바꿀 수 있음<br>
+                    <img src="imgs/cleenCode_1.jpg">
+                    : 재할당이 아닌 값만 바꾼 것이기 때문에 문제 없다<br><br>
                 </p>
             </div>
         </div>
