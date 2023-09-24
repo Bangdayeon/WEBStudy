@@ -26,18 +26,18 @@ var Links = {
 
 function nightDayHandler(self){
     var target = document.querySelector('body');
-    if(self.value === 'night'){
+    if(self.value === '🌜'){
         Body.setColor('white');
         Body.setBackgroundColor('black');
-        self.value = 'day';
+        self.value = '☀️';
 
-        Links.setColor('powderblue');
+        //Links.setColor('powderblue');
 
     } else{
         Body.setColor('black');
         Body.setBackgroundColor('white');
-        self.value = 'night';
+        self.value = '🌜';
 
-        Links.setColor('blue');
+        //Links.setColor('blue');
     }
 }

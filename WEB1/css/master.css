@@ -1,14 +1,7 @@
 body{
     margin:0;
 }
-h1{
-    font-size:45px;
-    text-align: center;
-    border-bottom:5px solid skyblue;
-    padding:20px;
-    margin:0px;
-    display:block; /*inline : 같은 줄, block : 줄바꿈*/
-}
+
 h3{
     background-color:paleturquoise;
     border-top:30px;
@@ -18,15 +11,24 @@ li{
     margin-top:20px;
 }
 
+#title h1{ /*부모가 title인 h1에 대한 설정*/
+    font-size:45px;
+    text-align: center;
+    background-color: gray;
+    padding:20px;
+    margin:0px;
+    display:block; /*inline : 같은 줄, block : 줄바꿈*/
+}
+
 #grid{
     display:grid;
     grid-template-columns:200px 1fr;
-    border-bottom:5px solid skyblue;
 }
-#grid ol{ /*부모가 grid인 ol에 대한 설정*/
-    border-right:5px solid skyblue;
+
+#list{
+    background-color: lightgray;
     margin:0px;
-    padding-top:20px;
+    padding-top:10px;
     padding-right:30px;
 }
 #article{
@@ -42,7 +44,6 @@ li{
     }
     #grid ol{
         border:none;
-        border-bottom:5px solid skyblue;
         padding-bottom:20px;
     }
 }
