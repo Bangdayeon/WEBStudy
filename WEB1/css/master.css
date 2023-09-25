@@ -1,14 +1,16 @@
+
+/*================[ body ]================*/
 body{
-    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:.75em;
+    color: #666
 }
 
-h3{
-    background-color:paleturquoise;
-    border-top:30px;
-    margin-right:30px;
-}
-li{
-    margin-top:20px;
+
+#whole_wrapper>.head header {
+    position: relative;
+    text-align: center;
+    z-index: 14
 }
 
 #title h1{ /*부모가 title인 h1에 대한 설정*/

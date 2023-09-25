@@ -7,37 +7,57 @@
         <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
         <script src="js/colors.js"></script>
     </head>
-    <body>
-        <div id="title">
-            <input type="button" value="🌜" onclick="nightDayHandler(this);">
-            <h1>💻WEBStudy💻</h1>
-        </div>
 
-        <div id="grid">
-            <div id="list">
-                <ol> 
-                    <li><a href="HOME.html">HOME</a></li>
-                    <li><a href="HTML.html">HTML</a></li>
-                    <li><a href="CSS.html">CSS</a></li>
-                    <li>
-                        <details>
-                            <summary><a href="JS.html">JavaScript</a></summary>
-                            <a href="cleanCode.html">Clean code</a>
-                        </details>
-                    </li>
-                </ol>
+    <body id="course_index">
+        <div id="whole_wrapper">
+            <div id="head">
+                <input type="button" value="🌜" onclick="nightDayHandler(this);">
+                <header>
+                    <hgroup>
+                        <p class="title">
+                            <a href="WEBStudy.html">💻방다웹💻</a>
+                        </p>
+                        <p class="subtitle">
+                            <small>다연이의 웹공부 사이트</small>
+                        </p>
+                    </hgroup>
+                    <ul id="left_nav">
+                        <li id="to_home">
+                            <a class="title" href="WEBStudy.html">
+                                <span>Open</span>
+                            </a>
+                        </li>
+                    </ul>
+                </header>
             </div>
-            
-            <div id="article">
-                <h2>HOME</h2>
-                <p>
-                    WEB 공부를 해보겠습니다
-                </p>
-
-                <h3>쿠쿠루삥뽕</h3>
+    
+            <div id="grid">
+                <div id="list">
+                    <ol> 
+                        <li><a href="HOME.html">HOME</a></li>
+                        <li><a href="WEB1/HTMLList/HTML.html">HTML</a></li>
+                        <li><a href="CSS.html">CSS</a></li>
+                        <li>
+                            <details>
+                                <summary><a href="JS.html">JavaScript</a></summary>
+                                <a href="cleanCode.html">Clean code</a>
+                            </details>
+                        </li>
+                    </ol>
+                </div>
                 
-                
+                <div id="article">
+                    <h2>HOME</h2>
+                    <p>
+                        WEB 공부를 해보겠습니다
+                    </p>
+    
+                    <h3>쿠쿠루삥뽕</h3>
+                    
+                    
+                </div>
             </div>
         </div>
+        
     </body>
 </html>

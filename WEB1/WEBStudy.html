@@ -8,7 +8,7 @@
         <script src="js/colors.js"></script>
     </head>
 
-    <body>
+    <body id="course_index">
         <div id="whole_wrapper"><!--div 나누는 거 생코 따라해봄ㅋ-->
             <div id="head">
                 <input type="button" value="🌜" onclick="nightDayHandler(this);">
@@ -21,6 +21,24 @@
                             <small>다연이의 웹공부 사이트</small>
                         </p>
                     </hgroup>
+                    <!--왼쪽 상단 미니미-->
+                    <ul id="left_nav">
+                        <li id="to_home">
+                            <a class="title" href="WEBStudy.html">
+                                <span>Open</span><!--inline 태그?-->
+                                "tutorials.org"
+                            </a>
+                        </li>
+                        <li id="course_allview">
+                            <a href="#" class="title">코스 전체목록</a>
+                        </li>
+                    </ul>
+                    <!--오른쪽 상단 미니미-->
+                    <nav id="right_nav"> <!--???왜 위에는 ul쓰고 여기는 nav 쓸까-->
+                        <ul>
+                            <input type="button" value="🌜" onclick="nightDayHandler(this);">
+                        </ul>
+                    </nav>
                 </header>
             </div>
             
@@ -28,7 +46,7 @@
                 <div id="list">
                     <ol> 
                         <li><a href="HOMEList/HOME.html">HOME</a></li>
-                        <li><a href="HOMEList/HOME.html">HTML</a></li>
+                        <li><a href="HTMLList/HTML.html">HTML</a></li>
                         <li><a href="CSSList/CSS.html">CSS</a></li>
                         <li>
                             <details>
