@@ -51,3 +51,8 @@ body{
 }
 /*1fr : 비율(fr)*/
 /*caniuse 사이트에서 속성 등을 검색해서 사용이 가능한지 확인할 수 있다*/
+
+#whole_wrapper footer {
+    padding: 30px;
+    text-align: center;
+}
