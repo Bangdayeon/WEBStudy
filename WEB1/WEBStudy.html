@@ -175,50 +175,76 @@
             </div><!--id=head-->
             
             <div id="body">
-                <div id="list">
-                    <ol> 
-                        <li><a href="HOMEList/HOME.html">HOME</a></li>
-                        <li><a href="HTMLList/HTML.html">HTML</a></li>
-                        <li><a href="CSSList/CSS.html">CSS</a></li>
-                        <li>
-                            <details>
-                                <summary><a href="JSList/JS.html">JavaScript</a></summary>
-                                <a href="JSList/cleanCode.html">Clean code</a>
-                            </details>
-                        </li>
-                    </ol>
-                </div>
-    
-                <div id="article">
-                    <h2>WEB Study</h2>
-                    <p>
-                        이 페이지는 웹 공부를 위한 페이지이다<br>
-                        HTML, CSS, JS로 시작해서 내용을 채워갈 거다<br>
-                        간단한 정리 및 실습용으로 제작하는 것<br>
-                    </p>
-    
-                    <h3>검색어</h3>
-                    <p>
-                        1. 태그를 삭제/추가하고 싶을 때<br>
-                        - document/DOM 객체 살펴보기<br><br>
-                        2. 웹브라우저를 조작해야할 경우<br>
-                        - window 객체 살펴보기<br><br>
-                        3. 웹페이지를 reroad하지 않고 정보를 변경하고 싶을 때<br>
-                        - ajax<br><br>
-                        4. 웹페이지가 리로드되어도 현재 상태를 유지하고 싶을 때<br>
-                        - cookie 사용<br><br>
-                        5. 인터넷이 끊겨도 동작하는 웹페이지<br>
-                        - offline web application<br><br>
-                        6. 화상통신<br>
-                        - webRTC<br><br>
-                        7. 사용자의 음성 인식<br>
-                        - speech<br><br>
-                        8. 3차원 그래픽<br>
-                        - webGL<br><br>
-                        9. 가상현실<br>
-                        - webVR<br>
-                    </p>
-                </div>
+                <div id="breadcrumb"> <!--???이거 왜 넣은걸까-->
+                    <div class="wrapper">
+                        <span id="breadcrumb_line">방다의 웹 공부방</span>
+                    </div>
+                </div> <!--DIV_BREADCRUMB-->
+
+                <div id="cols">
+                    <div class="wrapper">
+                        <div class="entry-area"><!--???이렇게 여러겹으로 감싸는 이유가 뭘까-->
+                            <article class="hentry">
+                                <hgroup>
+                                    <h1 class="entry-title">???이게 머임 왜 생코에서는 안보일까</h1>
+                                    <div class="props">
+                                        <time datetime pubdate>2023-01-03 17:39:57</time><!--???-->
+                                    </div>
+                                </hgroup>
+
+                                <div id="content" class="entry-content">
+                                    <p>&nbsp;</p>
+                                    <p style="text-align: center;">&nbsp;</p>
+
+                                    <p style="text-align: center;">
+                                    <img alt height="150" src="imgs/helloGIF.gif" width="150" class="helloGIF">
+                                    </p>
+                                    <p style="text-align: center;">hello world</p>
+                                    <p style="text-align: center;">&nbsp;</p>
+
+                                    <p>
+                                        워홀을 오고 하루하루를 놈팽이처럼 살아가던 나날들...<br>
+                                        그렇게 나의 공부 관성을 숨을 거두기 일보 직전으로 현재 일생 일대의 위기에 빠지게 되는데...<br>
+                                        <strong style="font-size: large; display:block">이대로 관성의 목숨을 잃을 수는 없다....!!🥹🥹</strong>
+                                        그렇게 뭐라도 끄적여보자는 의미로 페이지를 만들어보기 시작했다<br>
+                                        아는 것은 쥐뿔도 없지만 공부는 하기 싫어하는 나를 잘 아므로 눈에 보이는 무언가를 만들어보며 하기로 했고,<br>
+                                        그렇게 내 수준에 비해 고퀄인 생코 페이지를 그냥 멋대로 클론해보며 내 페이지를 만들어볼 것이다"<br>
+                                        아 공부는 대체 어떻게 해야하는 것일까..? 너무 어렵다..."<br>
+                                        그놈의 nbsp;는 왜이렇게 따로 쳐야하는지도 모르는 멍청이이지만 일단 해본다 이쿠죠-옷!"<br>
+                                    </p>
+                                    <p>&nbsp;</p>
+
+                                    <h3>검색어</h3>
+                                    <p>
+                                        1. 태그를 삭제/추가하고 싶을 때<br>
+                                        - document/DOM 객체 살펴보기<br><br>
+                                        2. 웹브라우저를 조작해야할 경우<br>
+                                        - window 객체 살펴보기<br><br>
+                                        3. 웹페이지를 reroad하지 않고 정보를 변경하고 싶을 때<br>
+                                        - ajax<br><br>
+                                        4. 웹페이지가 리로드되어도 현재 상태를 유지하고 싶을 때<br>
+                                        - cookie 사용<br><br>
+                                        5. 인터넷이 끊겨도 동작하는 웹페이지<br>
+                                        - offline web application<br><br>
+                                        6. 화상통신<br>
+                                        - webRTC<br><br>
+                                        7. 사용자의 음성 인식<br>
+                                        - speech<br><br>
+                                        8. 3차원 그래픽<br>
+                                        - webGL<br><br>
+                                        9. 가상현실<br>
+                                        - webVR<br>
+                                    </p>
+                                </div> <!--DIV_CONTENT-->
+                            </article>
+                            <div id="fb-root" class="fb_reset"><!--뭔지는 모르겠는데 일단 넣어봄-->
+                                <div style="position:absolute; top: -1000 0px; width: 0px; height: 0px;">
+                                    <div></div><!--???이건 왜 있는 걸까-->
+                                </div>
+                            </div> <!--DIV_FT-ROOT-->
+                        </div> <!--DIV_ENTRY-AREA-->
+                    </div> <!--DIV_WRAPPER-->
+                </div> <!--DIV_COLS-->
             </div><!--DIV_BODY-->
 
             <footer>
